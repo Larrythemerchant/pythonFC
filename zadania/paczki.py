@@ -39,8 +39,9 @@ for element in range(ilosc_towaru):
     if waga_towaru + waga_paczki > 20 :
         print('przekroczono maksymalna wage paczki, tworzymy now paczke')
         ilosc_paczek += 1
+        puste = 20 - waga_paczki
         if 20 - waga_paczki > paczka_z_najwieksza_pusta_waga:
-            paczka_z_najwieksza_pusta_waga = 20 - waga_paczki
+            paczka_z_najwieksza_pusta_waga = puste
             numer_paczki_z_najwieksza_pusta_waga = ilosc_paczek
         waga_paczki = waga_towaru
     else:

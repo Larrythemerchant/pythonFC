@@ -52,16 +52,8 @@ if waga_paczki > 0:
     if puste > paczka_z_najwieksza_pusta_waga:
         paczka_z_najwieksza_pusta_waga = puste
         numer_paczki_z_najwieksza_pusta_waga = ilosc_paczek
-print(f'Wysłano {ilosc_towaru} towarów w ilosci paczek {ilosc_paczek} o wadze {suma_kg} kg. Suma "pustych" kg {ilosc_paczek * 20 - suma_kg} kg.')
-print(f"paczka z najwieksza liczba pustych kg: paczka {numer_paczki_z_najwieksza_pusta_waga}")
-
-
-
-
-
-
-
-
-
-
-
+if suma_kg > 0:
+    print(f'Wysłano {ilosc_towaru} towarów w ilosci paczek {ilosc_paczek} o wadze {suma_kg} kg. Suma "pustych" kg {ilosc_paczek * 20 - suma_kg} kg.')
+    print(f"paczka z najwieksza liczba pustych kg: paczka {numer_paczki_z_najwieksza_pusta_waga}")
+else:
+    print('nie wyslano zadnej paczki')

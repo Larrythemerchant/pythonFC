@@ -23,12 +23,18 @@ Wskazówki:
 - Upewnij się, że program jest łatwy w obsłudze
 - Podczas obliczania wieku odbiorcy, pamiętaj, aby konwertować dane wprowadzone przez użytkownika na odpowiedni typ zmiennej.
 - Możesz zodyfikować szablon według własnego uznania. Upewnij się, że wyświetlasz wszystkie niezbędne zmienne."""
+
 from datetime import datetime
-print('Witaj, wypelnij dane ponizej by wygenerowac kartke z zyczeniami')
+
+print("Witaj, wypelnij dane ponizej by wygenerowac kartke z zyczeniami")
 imie = input("Prosze podac imie: ")
-rok_urodzenia =int(input("Prosze podac rok urodzenia: "))
-spersonalizowana_wiadomosc = input("Prosze podac spersonalizowane zyczenia urodzinowe: ")
+rok_urodzenia = int(input("Prosze podac rok urodzenia: "))
+spersonalizowana_wiadomosc = input(
+    "Prosze podac spersonalizowane zyczenia urodzinowe: "
+)
 imie_nadawcy = input("Prosze podac imie nadawcy: ")
 obecny_rok = datetime.now().year
 wiek = obecny_rok - rok_urodzenia
-print(f'{imie}, wszystkiego najlepszego z okazji {wiek} urodzin! {spersonalizowana_wiadomosc}, zyczy {imie_nadawcy}.')
+print(
+    f"{imie}, wszystkiego najlepszego z okazji {wiek} urodzin! {spersonalizowana_wiadomosc}, zyczy {imie_nadawcy}."
+)

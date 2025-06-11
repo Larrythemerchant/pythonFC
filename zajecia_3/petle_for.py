@@ -3,8 +3,9 @@
 # # for uczen in lista_uczniow:
 # #     print(uczen)
 from collections.abc import Iterable
+
 print(isinstance(range(20), Iterable))
-print(isinstance('michal', Iterable))
+print(isinstance("michal", Iterable))
 # # for number in range(20):
 # #     print(number)
 # ilosc_paczek = int(input('podaj ilosc paczek: '))
@@ -17,8 +18,7 @@ print(isinstance('michal', Iterable))
 # ################
 
 
-
-for char in 'michal':
+for char in "michal":
     print(char)
 """
 for (tymczasowa zmienna in (interowalny obiekt)

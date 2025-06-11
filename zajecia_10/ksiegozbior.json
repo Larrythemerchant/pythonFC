@@ -1,0 +1,24 @@
+[
+    {
+        "tytu\u0139\u201a": "harry potter i kamien filozocizny",
+        "autor": "jk rowling",
+        "data_wydania": 1997,
+        "cena": 39.99,
+        "ilosc_na_stanie": 5,
+        "kategoria": "fantasy",
+        "ilosc": 5,
+        "ISBN": "978-3-15-148410-0"
+    },
+    {
+        "tytu\u0139\u201a": "wladca pierscieni: druzyna pierscienia"
+    },
+    {},
+    {
+        "tytu\u0142": "pies",
+        "autor": "pies"
+    },
+    {
+        "tytu\u0142": "piesek",
+        "autor": "piesek"
+    }
+]

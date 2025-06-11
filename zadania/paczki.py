@@ -18,7 +18,8 @@ Podsumowanie:
     Suma pustych kilogramów: 4kg
     Najwięcej pustych kilogramów ma paczka 1 (4kg)
 """
-ilosc_towaru = int(input('podaj ilosc towaru:'))
+
+ilosc_towaru = int(input("podaj ilosc towaru:"))
 ilosc_paczek = 0
 paczka_z_najwieksza_pusta_waga = 0
 numer_paczki_z_najwieksza_pusta_waga = 0
@@ -26,18 +27,18 @@ waga_paczki = 0
 suma_kg = 0
 
 for element in range(ilosc_towaru):
-    waga_towaru = float(input(f'podaj wage towaru {element +1}:'))
+    waga_towaru = float(input(f"podaj wage towaru {element + 1}:"))
     if waga_towaru < 1 or waga_towaru > 10:
-        print('waga przekroczona, paczki wysylane.')
+        print("waga przekroczona, paczki wysylane.")
         if waga_paczki > 0:
             ilosc_paczek += 1
             puste = 20 - waga_paczki
-            if puste >paczka_z_najwieksza_pusta_waga:
+            if puste > paczka_z_najwieksza_pusta_waga:
                 paczka_z_najwieksza_pusta_waga = puste
                 numer_paczki_z_najwieksza_pusta_waga = ilosc_paczek
         break
-    if waga_towaru + waga_paczki > 20 :
-        print('przekroczono maksymalna wage paczki, tworzymy now paczke')
+    if waga_towaru + waga_paczki > 20:
+        print("przekroczono maksymalna wage paczki, tworzymy now paczke")
         ilosc_paczek += 1
         puste = 20 - waga_paczki
         if 20 - waga_paczki > paczka_z_najwieksza_pusta_waga:
@@ -54,7 +55,11 @@ if waga_paczki > 0:
         paczka_z_najwieksza_pusta_waga = puste
         numer_paczki_z_najwieksza_pusta_waga = ilosc_paczek
 if suma_kg > 0:
-    print(f'Wysłano {ilosc_towaru} towarów w ilosci paczek {ilosc_paczek} o wadze {suma_kg} kg. Suma "pustych" kg {ilosc_paczek * 20 - suma_kg} kg.')
-    print(f"paczka z najwieksza liczba pustych kg: paczka {numer_paczki_z_najwieksza_pusta_waga}")
+    print(
+        f'Wysłano {ilosc_towaru} towarów w ilosci paczek {ilosc_paczek} o wadze {suma_kg} kg. Suma "pustych" kg {ilosc_paczek * 20 - suma_kg} kg.'
+    )
+    print(
+        f"paczka z najwieksza liczba pustych kg: paczka {numer_paczki_z_najwieksza_pusta_waga}"
+    )
 else:
-    print('nie wyslano zadnej paczki')
+    print("nie wyslano zadnej paczki")

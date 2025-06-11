@@ -67,5 +67,5 @@
 # wiek += 1
 # print(id(wiek))
 
-historia = ['kupilismy 10 kg maki', 'sprzedalismy kwiata','sprzedalismy maslo']
+historia = ["kupilismy 10 kg maki", "sprzedalismy kwiata", "sprzedalismy maslo"]
 print(historia[0:3])

@@ -60,16 +60,19 @@ Największa transakcja: 5
 Liczba błędnych wpisów: 1
 
 """
-liczba_gosci_w_grupie = int(input('podaj liczbe gosci w grupie: '))
+
+liczba_gosci_w_grupie = int(input("podaj liczbe gosci w grupie: "))
 laczna_liczba_biletow = 0
 najwieksza_ilosc_biletow_w_transakcji = 0
 transakcja_z_najwieksza_iloscia_biletow = 0
 
 
 for transakcja in range(liczba_gosci_w_grupie):
-    liczba_biletow_transakcji = int(input(f'podaj liczbe biletow dla osoby {transakcja + 1}: '))
-    if liczba_biletow_transakcji < 1 or liczba_biletow_transakcji >5:
-        print('nieprawidlwa wartosc')
+    liczba_biletow_transakcji = int(
+        input(f"podaj liczbe biletow dla osoby {transakcja + 1}: ")
+    )
+    if liczba_biletow_transakcji < 1 or liczba_biletow_transakcji > 5:
+        print("nieprawidlwa wartosc")
         break
     laczna_liczba_biletow += liczba_biletow_transakcji
     if liczba_biletow_transakcji > najwieksza_ilosc_biletow_w_transakcji:
@@ -80,7 +83,9 @@ if liczba_gosci_w_grupie >= 5 and laczna_liczba_biletow >= 10:
     cena_biletu = 15
 else:
     cena_biletu = 20
-print(f'liczba biletow: {laczna_liczba_biletow}')
-print(f'laczna cena biletow to {laczna_liczba_biletow * cena_biletu}')
-print(f'najwieksza transakcja: {najwieksza_ilosc_biletow_w_transakcji}')
-print(f'transakcja z najwieksza iloscia biletow: {transakcja_z_najwieksza_iloscia_biletow}')
+print(f"liczba biletow: {laczna_liczba_biletow}")
+print(f"laczna cena biletow to {laczna_liczba_biletow * cena_biletu}")
+print(f"najwieksza transakcja: {najwieksza_ilosc_biletow_w_transakcji}")
+print(
+    f"transakcja z najwieksza iloscia biletow: {transakcja_z_najwieksza_iloscia_biletow}"
+)

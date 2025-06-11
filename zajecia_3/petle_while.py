@@ -1,4 +1,4 @@
-#wiek = int(input('podaj swoj wiek:'))
+# wiek = int(input('podaj swoj wiek:'))
 #
 #
 # while wiek < 65:
@@ -32,7 +32,7 @@
 # print('tutaj trafiamy po breaku!!!')
 
 ########### petla while:
-#while {warunek logiczny}:
+# while {warunek logiczny}:
 #   {blok kodu} a wyknuje sie dopoki warunek logicznt jest spelniony
 #
 # wiek = int(input('podaj swoj wiekL: '))
@@ -44,10 +44,10 @@
 #     print(f'nie powineienes jeszcze byc an emeryturze! masz {wiek} lat')
 
 
-wiek = int(input('podaj swoj wiek: '))
+wiek = int(input("podaj swoj wiek: "))
 
 if wiek >= 18:
     print("masz 18 lat lub wiecej")
 else:
     pass
-print('moje kolejne instrukcje')
+print("moje kolejne instrukcje")

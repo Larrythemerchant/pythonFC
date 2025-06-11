@@ -84,4 +84,4 @@ print(bool(1))
 print(bool(0))
 print(bool(-1))
 
-print('witam w moim swiecie')
+print("witam w moim swiecie")

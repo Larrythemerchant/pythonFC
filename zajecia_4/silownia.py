@@ -64,17 +64,17 @@ Procent wykorzystania planu: 83.33%
 Najdłuższe ćwiczenie: 25 minut
 """
 
-#plan treningowy
+# plan treningowy
 
-czas_treningu = int(input('podaj planownay czas treningu w minutach: '))
+czas_treningu = int(input("podaj planownay czas treningu w minutach: "))
 
 prawdziwy_czas_treningu = 0
 cwiczenia_powyzej_15_min = 0
 najdluzsze_cwiczenia = 0
 print(bool(""))
 while True:
-    czas_cwiczenia = input('podaj czas czas cwiczenika w minutach: ')
-    if czas_cwiczenia: #if czas+ciwczenia !="":
+    czas_cwiczenia = input("podaj czas czas cwiczenika w minutach: ")
+    if czas_cwiczenia:  # if czas+ciwczenia !="":
         czas_cwiczenia = int(czas_cwiczenia)
         if czas_cwiczenia > 45 or czas_cwiczenia < 5:
             break
@@ -89,21 +89,6 @@ while True:
     prawdziwy_czas_treningu += czas_cwiczenia
 
 print(f"czas trwania treningu: {prawdziwy_czas_treningu} minut")
-print(f"wykorzystalismy {(prawdziwy_czas_treningu/czas_treningu) * 100} % planu")
-print(f'liczba cwiczen powyzej 15 mint : {cwiczenia_powyzej_15_min}')
-print(f'najdluzesze cwiczenie {najdluzsze_cwiczenia} minut')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(f"wykorzystalismy {(prawdziwy_czas_treningu / czas_treningu) * 100} % planu")
+print(f"liczba cwiczen powyzej 15 mint : {cwiczenia_powyzej_15_min}")
+print(f"najdluzesze cwiczenie {najdluzsze_cwiczenia} minut")

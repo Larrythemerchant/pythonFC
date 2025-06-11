@@ -38,21 +38,21 @@
 #     print('ten produkt nie wymaga podwania wieku')
 #     print(f'kupiles produkt{nazwa_produktu} o cenie: {cena_produktu}zł')
 
-zawod = input('podaj swoj zawod: ')
-wiek = int(input('podaj wiek: '))
+zawod = input("podaj swoj zawod: ")
+wiek = int(input("podaj wiek: "))
 
-if zawod == 'policjant':
-    print(f'do emerytury zostalo ci {45 - wiek} lat')
-elif zawod == 'zolnierz':
-    print(f'do emerytury zostalo ci {50 - wiek} lat')
-elif zawod == 'nauczyciel':
-    print(f'do emerytury zostalo ci {60 - wiek} lat')
-elif zawod == 'praca biurowa':
-    print(f'do emerytury zostalo ci {65 - wiek} lat')
-elif zawod == 'programista':
-    print('nie ma dla ciebie emerytury')
+if zawod == "policjant":
+    print(f"do emerytury zostalo ci {45 - wiek} lat")
+elif zawod == "zolnierz":
+    print(f"do emerytury zostalo ci {50 - wiek} lat")
+elif zawod == "nauczyciel":
+    print(f"do emerytury zostalo ci {60 - wiek} lat")
+elif zawod == "praca biurowa":
+    print(f"do emerytury zostalo ci {65 - wiek} lat")
+elif zawod == "programista":
+    print("nie ma dla ciebie emerytury")
 else:
-    print(f'do twojej emerytury prawdopodobnie zostalo ci {65 - wiek} lat')
+    print(f"do twojej emerytury prawdopodobnie zostalo ci {65 - wiek} lat")
 
 
 """
